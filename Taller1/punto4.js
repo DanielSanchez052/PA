@@ -12,6 +12,19 @@ const sacarEnergiaNegativa=(sables)=>{
   return energiaNegativa;
 }
 
+function sacarEnergiaNegativa(sables){
+  let energiaNegativa = 0;
+
+  sables.map((energia) => {
+    if (energia < 0) {
+      energiaNegativa += 1;
+    }
+  });
+
+  return energiaNegativa;
+}
+
+
 console.log(
   `Los sables que tienen energia negativa son ${sacarEnergiaNegativa(
     energiaSables
