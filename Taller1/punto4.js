@@ -1,6 +1,6 @@
 const energiaSables = [2, 4, -8, 5, -6];
 
-const sacarEnergiaNegativa=(sables)=>{
+const sacarEnergiaNegativa = (sables) => {
   let energiaNegativa = 0;
 
   sables.map((energia) => {
@@ -9,10 +9,10 @@ const sacarEnergiaNegativa=(sables)=>{
     }
   });
 
-  return energiaNegativa;
-}
+  return `Los sables que tienen energia negativa son ${energiaNegativa}`;
+};
 
-function sacarEnergiaNegativa(sables){
+function sacarEnergiaNegativa(sables) {
   let energiaNegativa = 0;
 
   sables.map((energia) => {
@@ -21,9 +21,8 @@ function sacarEnergiaNegativa(sables){
     }
   });
 
-  return energiaNegativa;
+  return `Los sables que tienen energia negativa son ${energiaNegativa}`;
 }
-
 
 console.log(
   `Los sables que tienen energia negativa son ${sacarEnergiaNegativa(

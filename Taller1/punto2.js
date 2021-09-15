@@ -1,13 +1,12 @@
-const get_pilot_name =(accessCode)=>{
+const get_pilot_name = (accessCode) => {
   const name = accessCode.split(":")[1];
   return name;
-}
+};
 
 // function get_pilot_name(accessCode){
 //   const name = accessCode.split(":")[1];
 //   return name;
 // }
-
 
 console.log(
   `El nombre del piloto es: ${get_pilot_name("ARQ2555:Sara Bel-Sun")}`
